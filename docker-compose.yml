@@ -1,0 +1,12 @@
+version: '2.7'
+
+services:
+  rabbit:
+    image: 'bitnami/rabbitmq:latest'
+    environment:
+    - RABBITMQ_USERNAME=root
+    - RABBITMQ_PASSWORD=root
+    ports:
+      - '15672:15672'
+    # volumes:
+      # - 'rabbitmqstats_data:/bitnami'
